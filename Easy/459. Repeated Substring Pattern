@@ -1,0 +1,95 @@
+    Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
+
+
+
+    Example 1:
+
+    Input: s = "abab"
+    Output: true
+    Explanation: It is the substring "ab" twice.
+    Example 2:
+
+    Input: s = "aba"
+    Output: false
+    Example 3:
+
+    Input: s = "abcabcabcabc"
+    Output: true
+    Explanation: It is the substring "abc" four times or the substring "abcabc" twice.
+
+
+    Constraints:
+
+    1 <= s.length <= 104
+    s consists of lowercase English letters.
+    
+    
+// Best solution:
+
+class Solution {
+    public boolean repeatedSubstringPattern(String s) {
+        // 最优解：
+        // 使用了 String s.replace(String substring, String newstring);
+        // 思路：check from middle,(abcabc)we need c here, so index = length/2-1 
+        // and we assume that the correct substring is substring(0, i+1).
+        // Then we check if s.length() % substring.length() == 0, if it is
+        // then we check if the last letter of the substring is the same as that of s.
+        // if both are true then do the replacement to check true or false.
+        // else, i -- to see a shorter substring (0, i+1) until i is smaller than 0.
+        
+        for (int i = s.length() / 2 - 1; i >= 0; i--) {
+            if (s.length() % (i+1) == 0 && s.charAt(i) == s.charAt(s.length()-1)) {
+                if (s.replace(s.substring(0, i+1), "").equals("")) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+// First try:
+
+class Solution {
+    public boolean repeatedSubstringPattern(String s) {
+        // 硬解法：faster than 24%
+        for(int i = 1; i < s.length(); i++){
+            if (s.charAt(i) == s.charAt(0)) {
+                String same = (s.substring(0, i)).repeat(s.length() / (s.substring(0,i)).length());
+                if (same.equals(s) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+// Second try:
+
+class Solution {
+    public boolean repeatedSubstringPattern(String s) {
+        // 第二次尝试：
+        // indexOf(int ch)
+        // Returns the index within this string of the first occurrence of the specified character.
+        // indexOf(int ch, int fromIndex)
+        // Returns the index within this string of the first occurrence of the specified character, starting the              search at the specified index.
+        
+        // indexOf(String str)
+        // Returns the index within this string of the first occurrence of the specified substring.
+        // indexOf(String str, int fromIndex)
+        // Returns the index within this string of the first occurrence of the specified substring, starting at              the specified index.
+        int newPos = 1;
+        for(int i = s.indexOf(s.charAt(0), newPos); i != -1; i = s.indexOf(s.charAt(0), newPos)){
+            if (s.charAt(i) == s.charAt(0)) {
+                String substr = s.substring(0, i);
+                String same = substr.repeat(s.length() / substr.length());
+                if (same.equals(s)){
+                    return true;
+                }
+            }
+            newPos = i + 1;
+        }
+        return false;
+    }
+}
