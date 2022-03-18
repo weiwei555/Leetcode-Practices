@@ -1,0 +1,35 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        // first way: using for loop and hashmap = failure for [3,3]
+        /*
+        HashMap<Integer, Integer> mapping = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            mapping.put(nums[i], i);
+        }
+        for (Integer each_key : mapping.keySet()) {
+            for (Integer each_key2 : mapping.keySet()) {
+                if ((each_key + each_key2) == target) {
+                    result[0] = mapping.get(each_key);
+                    result[1] = mapping.get(each_key2);
+                    break;
+                }
+            }
+        }
+        return result;*/
+        
+        // second way: using arrays
+        int[] result = new int[2];
+        HashMap<Integer, Integer> mapping = new HashMap<>();
+        // store <elem, index> into the hashmap. If existed then return directly this one and that one.
+        // should work since the input can be ([3,3], 6) but not ([2,2,2], 6) since only two indexes
+        // should be returned as answer. Maximum number of duplicates which added as target should be 2.
+        for (int i = 0; i < nums.length; i++) {
+            if (mapping.containsKey(target - nums[i])) {
+                return new int[] {i, mapping.get(target - nums[i])};
+            }
+            mapping.put(nums[i], i);
+        }
+        return result;
+        
+    }
+}
