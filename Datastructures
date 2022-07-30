@@ -16,3 +16,10 @@
 136. Single Number
 	Bitwise operation: XOR(^) for finding uniqness
 	
+349. Intersection of Two Arrays
+	HashSet.contains(), ArrayList
+	
+1260. Shift 2D Grid
+	ArrayList, Arrays.asList(), matrix
+
+
