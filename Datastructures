@@ -22,4 +22,8 @@
 1260. Shift 2D Grid
 	ArrayList, Arrays.asList(), matrix
 
+118. Pascal's Triangle
+	Dynamic Programming, ArrayList
 
+169. Majority Element
+	Boyer Moore Algorithm
