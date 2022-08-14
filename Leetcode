@@ -40,3 +40,12 @@
 	
 283. Move Zeroes
 	2 Pointers 
+	
+1929. Concatenation of Array
+	System.arraycopy(src, srcpos, dest, destpos, len);
+	
+953. Verifying an Alien Dictionary
+	lexicographically = alphabetically, str.indexOf() faster than hashmap
+
+246. Strobogrammatic Number
+	StringBuilder is faster than String, new StringBuilder(), .append(), .toString()
