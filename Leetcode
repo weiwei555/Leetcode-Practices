@@ -49,3 +49,9 @@
 
 246. Strobogrammatic Number
 	StringBuilder is faster than String, new StringBuilder(), .append(), .toString()
+	
+2023. Number of Pairs of Strings With Concatenation Equal to Target
+	HashMap.getOrDefault(key, value), Two Sums-like but substring
+
+362. Design Hit Counter
+	Queue initialized using LinkedList, sliding window
