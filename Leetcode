@@ -55,3 +55,9 @@
 
 362. Design Hit Counter
 	Queue initialized using LinkedList, sliding window
+
+986. Interval List Intersections
+	ArrayList.toArray(), two dimensional array, discard the interval with smallest endpoint each time
+	
+230. Kth Smallest Element in a BST *****
+	DFS, resursion
