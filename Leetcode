@@ -75,6 +75,9 @@
 	Didn't make it through :D Union Find (Disjoint set), too hard but should look back
 	Since they ask you this :D
 
+1740. Find Distance in a Binary Tree
+	LCA(lowest common ancestor in tree), DFS. Find the LCA and then use that as root for DFS searching
+
 
 	
 	
