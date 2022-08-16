@@ -60,7 +60,7 @@
 	ArrayList.toArray(), two dimensional array, discard the interval with smallest endpoint each time
 	
 230. Kth Smallest Element in a BST *****
-	DFS, recursion, BFS tree for searching nodes.left recorsively for finding small value and nodes.right for large
+	DFS, recursion, BFS tree for searching nodes.left recursively for finding small value and nodes.right for large
 	
 529. Minesweeper ***
 	DFS, recursive finding in all 8 directions on a grid
@@ -68,3 +68,13 @@
 1861. Rotating the Box **
 	Tail to front traversal, similar to Move Zeros
 
+427. Construct Quad Tree
+	Recursion, nearly the same with 529. Minesweeper.
+
+399. Evaluate Division  ****************
+	Didn't make it through :D Union Find (Disjoint set), too hard but should look back
+	Since they ask you this :D
+
+
+	
+	
