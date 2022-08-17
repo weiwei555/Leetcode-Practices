@@ -33,7 +33,7 @@
 	2 Pointers
 	
 1160. Find Words That Can Be Formed by Characters
-	character arithmetic('b' - 'a' = 1), array
+	character arithmetic('b' - 'a' = 1), frequency array instead of hashmap
 
 217. Contains Duplicate
 	HashSet, HashSet.add() returns false if duplicate
@@ -78,6 +78,10 @@
 1740. Find Distance in a Binary Tree
 	LCA(lowest common ancestor in tree), DFS. Find the LCA and then use that as root for DFS searching
 
-
+366. Find Leaves of Binary Tree
+	DFS
+	
+1400. Construct K Palindrome Strings
+	frequency array (with character minus), palindrome string (1 odd occurance char occupy 1)
 	
 	
