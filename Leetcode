@@ -75,13 +75,19 @@
 	Didn't make it through :D Union Find (Disjoint set), too hard but should look back
 	Since they ask you this :D
 
-1740. Find Distance in a Binary Tree
+1740. Find Distance in a Binary Tree  **
 	LCA(lowest common ancestor in tree), DFS. Find the LCA and then use that as root for DFS searching
 
-366. Find Leaves of Binary Tree
+366. Find Leaves of Binary Tree   ***
 	DFS
 	
 1400. Construct K Palindrome Strings
 	frequency array (with character minus), palindrome string (1 odd occurance char occupy 1)
 	
+384. Shuffle an Array
+	Only need to pick later/previous index for switching to get equal possibility for every element to every position
 	
+729. My Calendar I  ***
+	BST tree (search from middle)!
+
+
