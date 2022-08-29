@@ -96,6 +96,9 @@
 361. Bomb Enemy
 	Dynamic programming
 	
+1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+	So hard to understand... Sliding Window, Deque
+	
 
 
 
