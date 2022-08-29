@@ -44,4 +44,16 @@
     }
   We will get: [120, 20, 5, 1]
   ```
-###### 4. Deque
+###### 4. Deque  <- double-ended queue for sliding window
+```
+  Deque<String> dq = new LinkedList<String>();
+  dq.addFirst("B");
+  dq.addLast("C");
+  // return and remove
+  dq.pollFirst();
+  dq.pollLast();
+  dq.getFirst();
+  dq.getLast();
+  dq.size();
+  dq.contains("A");
+```
