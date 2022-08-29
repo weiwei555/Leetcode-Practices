@@ -49,9 +49,8 @@
   Deque<String> dq = new LinkedList<String>();
   dq.addFirst("B");
   dq.addLast("C");
-  // return and remove
-  dq.pollFirst();
-  dq.pollLast();
+  dq.pollFirst();   <- return and remove
+  dq.pollLast();    <- return and remove
   dq.getFirst();
   dq.getLast();
   dq.size();
