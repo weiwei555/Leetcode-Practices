@@ -22,7 +22,7 @@
   pq.poll();  -> remove and return top
   pq.remove(6); -> remove the corresponding element
   ```
-  For integer, Strings, use default comparator so that smaller comes as top
+  For integer, Strings, use default comparator so it's default ascending  
   Write comparator yourself:
   ```
   int capacity = 3;
@@ -44,4 +44,4 @@
     }
   We will get: [120, 20, 5, 1]
   ```
-  
+###### 4. Deque
