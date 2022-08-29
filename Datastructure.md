@@ -1,26 +1,30 @@
 ###### 1. Stack [FILO]
+```
   Stack<Integer> s = new Stack<Integer>();
   s.search(6); -> return index, -1 if not found
   s.pop();     -> remove and return from top
   s.push(6);   -> add to top
   s.peek();    -> display top
- 
+ ```
 ###### 2. Queue [FIFO]
+```
   Queue<Integer> q = new LinkedList<>();
   q.add(6);   -> add to tail
   q.remove(); -> remove and return from head
   q.peek();   -> display head
   q.size();   -> display size
-  
-3. Priority Queue
+  ```
+###### 3. Priority Queue
+```
   Queue<Integer> pq = new PriorityQueue<Integer>();
   pq.add(6);
   pq.peek();
   pq.poll();  -> remove and return top
   pq.remove(6); -> remove the corresponding element
-  
+  ```
   For integer, Strings, use default comparator so that smaller comes as top
   Write comparator yourself:
+  ```
   int capacity = 3;
   in main:
     Queue<Integer> pq = new PriorityQueue<Integer>(capacity, new LargeComparator());
@@ -37,6 +41,5 @@
         return 0;
       }
     }
-
-  
+  ```
   
