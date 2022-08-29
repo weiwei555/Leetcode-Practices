@@ -1,4 +1,4 @@
-1. Stack [FILO]
+###### 1. Stack [FILO]
   Stack<Integer> s = new Stack<Integer>();
   s.search(6); -> return index, -1 if not found
   s.pop();     -> remove and return from top
