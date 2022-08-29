@@ -56,3 +56,6 @@
   dq.size();
   dq.contains("A");
 ```
+###### 5. Heap
+
+###### 6. BST tree
