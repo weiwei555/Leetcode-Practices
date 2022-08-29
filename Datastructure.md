@@ -44,7 +44,7 @@
     }
   We will get: [120, 20, 5, 1]
   ```
-###### 4. Deque  <- double-ended queue for sliding window
+###### 4. Deque       <- double-ended queue for sliding window
 ```
   Deque<String> dq = new LinkedList<String>();
   dq.addFirst("B");
