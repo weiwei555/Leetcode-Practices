@@ -5,7 +5,7 @@
   s.push(6);   -> add to top
   s.peek();    -> display top
  
-2. Queue [FIFO]
+###### 2. Queue [FIFO]
   Queue<Integer> q = new LinkedList<>();
   q.add(6);   -> add to tail
   q.remove(); -> remove and return from head
