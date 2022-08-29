@@ -32,7 +32,8 @@
     class LargeComparator implements Comparator<Integer>{\
       // overriding the compare function
       public int compare(int a, int b){
-      // 1 for ascending, -1 for descending, 0 for same.
+      // ascending: -1 when first element is less than, 1 when first element is larger than
+      // descending: 1 when first element is less than, -1 when first element is larger than
         if (a < b) {
           return 1;
         }else if (a > b){
@@ -41,5 +42,6 @@
         return 0;
       }
     }
+  We will get: [120, 20, 5, 1]
   ```
   
