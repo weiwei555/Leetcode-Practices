@@ -99,6 +99,11 @@
 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
 	So hard to understand... Sliding Window, Deque
 	
+2187. Minimum Time to Complete Trips  **
+	Binary Search
+	
+855. Exam Room ****
+	TreeSet(need more practice!)
 
 
 
