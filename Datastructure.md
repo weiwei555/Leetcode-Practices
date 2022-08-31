@@ -68,7 +68,7 @@
 
 ###### 7. TreeSet
 ```
-  Set<Interval> ts = new TreeSet<>((a,b) -> (a.start != b.start)? 
+  TreeSet<Interval> ts = new TreeSet<>((a,b) -> (a.start != b.start)? 
                                             (a.start - b.start) : (a.end - b.end));
   ts.pollFirst();  -> return & remove first
   ts.add();
