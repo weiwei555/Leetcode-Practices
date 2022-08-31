@@ -43,6 +43,12 @@
       }
     }
   We will get: [120, 20, 5, 1]
+  
+  Another example from 692. Top K frequent Words:
+  Here we are aiming at a Descending order frequency, so make it "b.freq - a.freq" 
+  instead of "a.freq - b.freq" as default(ascending).
+  Queue<wordFreq> pq = new PriorityQueue<>((a,b) -> a.freq == b.freq ?
+                                                 (a.word.compareTo(b.word)) : (b.freq - a.freq));
   ```
 ###### 4. Deque   <- double-ended queue for sliding window
 ```
