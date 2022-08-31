@@ -65,3 +65,13 @@
 ###### 5. Heap
 
 ###### 6. BST tree
+
+###### 7. TreeSet
+```
+  Set<Interval> ts = new TreeSet<>((a,b) -> (a.start != b.start)? 
+                                            (a.start - b.start) : (a.end - b.end));
+  ts.pollFirst();  -> return & remove first
+  ts.add();
+  ts.pollLast();
+  ts.first();      -> return first, only can call when is not empty, or exception
+```
