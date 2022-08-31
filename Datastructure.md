@@ -27,7 +27,7 @@
   ```
   int capacity = 3;
   in main:
-    Queue<Integer> pq = new PriorityQueue<Integer>(capacity, new LargeComparator());
+    Queue<Integer> pq = new PriorityQueue<Integer>(new LargeComparator());
   outside:
     class LargeComparator implements Comparator<Integer>{\
       // overriding the compare function
