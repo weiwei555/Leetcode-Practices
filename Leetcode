@@ -104,6 +104,16 @@
 	
 855. Exam Room ****
 	TreeSet(need more practice!)
+	
+759. Employee Free Time
+	Sorting using TreeSet(modify comparator using (a,b) -> ...), Intervals
 
+692. Top K Frequent Words
+	Sorting using PriorityQueue(modify comparator to sort object), make a class yourself, 
+	using hashmap to process all words first then construct object, add to pq to sort frequency collected.
+
+1814. Count Nice Pairs in an Array **
+	HashMap, reversing an int, count Pairs(CSE312)
+	
 
 
