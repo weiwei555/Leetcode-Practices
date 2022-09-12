@@ -115,5 +115,8 @@
 1814. Count Nice Pairs in an Array **
 	HashMap, reversing an int, count Pairs(CSE312)
 	
-
+79. Word Search  ***
+	DFS. Unable children to find back to parent by changing parent's value. Changes back
+	After all children findings to make sure the board is good.
+	
 
