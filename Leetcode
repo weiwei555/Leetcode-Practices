@@ -119,4 +119,5 @@
 	DFS. Unable children to find back to parent by changing parent's value. Changes back
 	After all children findings to make sure the board is good.
 	
-
+200. Number of Islands  **
+	BFS, DFS
