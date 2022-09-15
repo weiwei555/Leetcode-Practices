@@ -128,3 +128,5 @@
 88. Merge Sorted Array  *
 	Two pointers, traverse and fill from back
 	
+56. Merge Intervals  **
+ 	result.toArray(new int[...][...]);, Arrays.sort(), intervals
