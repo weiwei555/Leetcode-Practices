@@ -121,3 +121,10 @@
 	
 200. Number of Islands  **
 	BFS, DFS
+
+339. Nested List Weight Sum ***
+	DFS
+	
+88. Merge Sorted Array  *
+	Two pointers, traverse and fill from back
+	
