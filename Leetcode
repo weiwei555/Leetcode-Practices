@@ -130,3 +130,6 @@
 	
 56. Merge Intervals  **
  	result.toArray(new int[...][...]);, Arrays.sort(), intervals
+
+21. Merge Two Sorted Lists  **
+	LinkedList
